@@ -1,0 +1,1 @@
+import{y as t,z as o,j as r,r as a,J as l,t as s}from"./main-osqZAit2.js";import{at as n}from"./analytics-BHBrV_Gj.js";const d=()=>{const{closeModal:e}=t(o.PaymentErrorModal);return r.jsx(a,{fullScreen:!1,visible:!0,id:l.modal.paymentError.index,onClose:e,title:s("somethingWentWrong"),titleCentered:!0,withCloseButton:!1,children:null})},u=n.memo(d);export{u as default};

@@ -1,0 +1,1 @@
+import{Z as o,H as c,bs as n,bt as t,j as u,bu as S,bv as v}from"./main-osqZAit2.js";import{at as y,r as b}from"./analytics-BHBrV_Gj.js";const i=({place:a,eligible:e=!0})=>{o();const s=c(),r=b.useSyncExternalStore(n,t,t);return u.jsx(S,{place:a,eligible:e,portrait:s,snapshot:r,onRetry:()=>{v(a).catch(()=>{})}})},m=y.memo(i);export{m as P};
