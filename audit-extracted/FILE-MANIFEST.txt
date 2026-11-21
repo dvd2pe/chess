@@ -825,6 +825,7 @@ audit-extracted/chess-free.game-files.crazygames.com/chess-free/375/assets/w-cPc
 audit-extracted/chess-free.game-files.crazygames.com/chess-free/375/assets/w-wNi-ph0j.png
 audit-extracted/chess-free.game-files.crazygames.com/chess-free/375/cg-privacy.html
 audit-extracted/chess-free.game-files.crazygames.com/chess-free/375/engine.js
+audit-extracted/chess-free.game-files.crazygames.com/chess-free/375/engine.wasm
 audit-extracted/chess-free.game-files.crazygames.com/chess-free/375/engine.wasm.js
 audit-extracted/chess-free.game-files.crazygames.com/chess-free/375/index.html
 audit-extracted/choices.trustarc.com/cap-3fa16bbf786778.gif
