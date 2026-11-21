@@ -1,0 +1,108 @@
+/* POST-OPEN banners -- template; _build/post-open.js fills in 300 x 250 per size.
+   Edit here and rebuild, not in an ad folder. */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+body * {
+    vertical-align: baseline;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ad-container {
+    display: none;
+    cursor: pointer;
+    width: 300px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.ad-container.ready {
+    display: block;
+}
+
+.border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    z-index: 10;
+    pointer-events: none;
+}
+
+/* Every piece starts hidden; scripts.js fades each one in when its turn comes. */
+
+.state {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* The background scales from its centre for the whole ad (the ad container clips it). */
+
+.bg {
+    transform-origin: 50% 50%;
+    will-change: transform;
+}
+
+/* Leaderboards: one clipped box per photo. Each photo's own transform-origin (its face)
+   is set inline by the build, overriding the centre above. */
+
+.bg-panel {
+    position: absolute;
+    overflow: hidden;
+}
+
+/* The endframe's own photo, where a size has one: a full-ad layer over the quotes' photo
+   that fades in with the endframe. Its images are shown; the wrapper does the fading. */
+
+.bg-end {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* GET TICKETS: the wrapper fades in with the endframe; .hover picks which state shows. */
+
+.cta-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.cta-wrap .state {
+    opacity: 1;
+    visibility: inherit;
+}
+
+.ad-container.hover .cta-normal,
+.ad-container:not(.hover) .cta-over {
+    display: none;
+}

@@ -1,0 +1,1151 @@
+@-webkit-keyframes a_chess_01 {
+    0% {
+        translate: 0% 100%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_01 {
+    0% {
+        translate: 0% 100%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_02 {
+    0% {
+        translate: 0% 200%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_02 {
+    0% {
+        translate: 0% 200%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_03 {
+    0% {
+        translate: 0% 300%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_03 {
+    0% {
+        translate: 0% 300%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_04 {
+    0% {
+        translate: 0% 400%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_04 {
+    0% {
+        translate: 0% 400%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_05 {
+    0% {
+        translate: 0% 500%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_05 {
+    0% {
+        translate: 0% 500%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_06 {
+    0% {
+        translate: 0% 600%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_06 {
+    0% {
+        translate: 0% 600%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_07 {
+    0% {
+        translate: 0% 700%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_07 {
+    0% {
+        translate: 0% 700%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_-10 {
+    0% {
+        translate: -100% 0%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_-10 {
+    0% {
+        translate: -100% 0%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_-11 {
+    0% {
+        translate: -100% 100%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_-11 {
+    0% {
+        translate: -100% 100%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_-12 {
+    0% {
+        translate: -100% 200%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_-12 {
+    0% {
+        translate: -100% 200%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_-20 {
+    0% {
+        translate: -200% 0%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_-20 {
+    0% {
+        translate: -200% 0%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_-21 {
+    0% {
+        translate: -200% 100%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_-21 {
+    0% {
+        translate: -200% 100%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_-22 {
+    0% {
+        translate: -200% 200%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_-22 {
+    0% {
+        translate: -200% 200%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_-30 {
+    0% {
+        translate: -300% 0%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_-30 {
+    0% {
+        translate: -300% 0%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_-33 {
+    0% {
+        translate: -300% 300%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_-33 {
+    0% {
+        translate: -300% 300%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_-40 {
+    0% {
+        translate: -400% 0%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_-40 {
+    0% {
+        translate: -400% 0%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_-44 {
+    0% {
+        translate: -400% 400%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_-44 {
+    0% {
+        translate: -400% 400%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_-50 {
+    0% {
+        translate: -500% 0%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_-50 {
+    0% {
+        translate: -500% 0%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_-55 {
+    0% {
+        translate: -500% 500%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_-55 {
+    0% {
+        translate: -500% 500%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_-60 {
+    0% {
+        translate: -600% 0%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_-60 {
+    0% {
+        translate: -600% 0%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_-66 {
+    0% {
+        translate: -600% 600%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_-66 {
+    0% {
+        translate: -600% 600%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_-70 {
+    0% {
+        translate: -700% 0%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_-70 {
+    0% {
+        translate: -700% 0%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_-77 {
+    0% {
+        translate: -700% 700%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_-77 {
+    0% {
+        translate: -700% 700%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_0-1 {
+    0% {
+        translate: 0% -100%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_0-1 {
+    0% {
+        translate: 0% -100%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_-1-1 {
+    0% {
+        translate: -100% -100%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_-1-1 {
+    0% {
+        translate: -100% -100%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_-2-1 {
+    0% {
+        translate: -200% -100%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_-2-1 {
+    0% {
+        translate: -200% -100%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_0-2 {
+    0% {
+        translate: 0% -200%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_0-2 {
+    0% {
+        translate: 0% -200%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_-1-2 {
+    0% {
+        translate: -100% -200%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_-1-2 {
+    0% {
+        translate: -100% -200%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_-2-2 {
+    0% {
+        translate: -200% -200%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_-2-2 {
+    0% {
+        translate: -200% -200%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_0-3 {
+    0% {
+        translate: 0% -300%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_0-3 {
+    0% {
+        translate: 0% -300%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_-3-3 {
+    0% {
+        translate: -300% -300%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_-3-3 {
+    0% {
+        translate: -300% -300%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_0-4 {
+    0% {
+        translate: 0% -400%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_0-4 {
+    0% {
+        translate: 0% -400%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_-4-4 {
+    0% {
+        translate: -400% -400%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_-4-4 {
+    0% {
+        translate: -400% -400%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_0-5 {
+    0% {
+        translate: 0% -500%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_0-5 {
+    0% {
+        translate: 0% -500%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_-5-5 {
+    0% {
+        translate: -500% -500%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_-5-5 {
+    0% {
+        translate: -500% -500%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_0-6 {
+    0% {
+        translate: 0% -600%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_0-6 {
+    0% {
+        translate: 0% -600%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_-6-6 {
+    0% {
+        translate: -600% -600%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_-6-6 {
+    0% {
+        translate: -600% -600%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_0-7 {
+    0% {
+        translate: 0% -700%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_0-7 {
+    0% {
+        translate: 0% -700%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_-7-7 {
+    0% {
+        translate: -700% -700%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_-7-7 {
+    0% {
+        translate: -700% -700%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_10 {
+    0% {
+        translate: 100% 0%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_10 {
+    0% {
+        translate: 100% 0%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_11 {
+    0% {
+        translate: 100% 100%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_11 {
+    0% {
+        translate: 100% 100%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_12 {
+    0% {
+        translate: 100% 200%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_12 {
+    0% {
+        translate: 100% 200%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_1-1 {
+    0% {
+        translate: 100% -100%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_1-1 {
+    0% {
+        translate: 100% -100%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_1-2 {
+    0% {
+        translate: 100% -200%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_1-2 {
+    0% {
+        translate: 100% -200%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_20 {
+    0% {
+        translate: 200% 0%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_20 {
+    0% {
+        translate: 200% 0%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_21 {
+    0% {
+        translate: 200% 100%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_21 {
+    0% {
+        translate: 200% 100%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_22 {
+    0% {
+        translate: 200% 200%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_22 {
+    0% {
+        translate: 200% 200%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_2-1 {
+    0% {
+        translate: 200% -100%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_2-1 {
+    0% {
+        translate: 200% -100%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_2-2 {
+    0% {
+        translate: 200% -200%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_2-2 {
+    0% {
+        translate: 200% -200%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_30 {
+    0% {
+        translate: 300% 0%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_30 {
+    0% {
+        translate: 300% 0%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_33 {
+    0% {
+        translate: 300% 300%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_33 {
+    0% {
+        translate: 300% 300%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_3-3 {
+    0% {
+        translate: 300% -300%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_3-3 {
+    0% {
+        translate: 300% -300%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_40 {
+    0% {
+        translate: 400% 0%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_40 {
+    0% {
+        translate: 400% 0%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_44 {
+    0% {
+        translate: 400% 400%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_44 {
+    0% {
+        translate: 400% 400%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_4-4 {
+    0% {
+        translate: 400% -400%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_4-4 {
+    0% {
+        translate: 400% -400%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_50 {
+    0% {
+        translate: 500% 0%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_50 {
+    0% {
+        translate: 500% 0%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_55 {
+    0% {
+        translate: 500% 500%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_55 {
+    0% {
+        translate: 500% 500%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_5-5 {
+    0% {
+        translate: 500% -500%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_5-5 {
+    0% {
+        translate: 500% -500%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_60 {
+    0% {
+        translate: 600% 0%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_60 {
+    0% {
+        translate: 600% 0%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_66 {
+    0% {
+        translate: 600% 600%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_66 {
+    0% {
+        translate: 600% 600%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_6-6 {
+    0% {
+        translate: 600% -600%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_6-6 {
+    0% {
+        translate: 600% -600%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_70 {
+    0% {
+        translate: 700% 0%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_70 {
+    0% {
+        translate: 700% 0%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_77 {
+    0% {
+        translate: 700% 700%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_77 {
+    0% {
+        translate: 700% 700%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@-webkit-keyframes a_chess_7-7 {
+    0% {
+        translate: 700% -700%
+    }
+    to {
+        translate: 0 0
+    }
+}
+
+@keyframes a_chess_7-7 {
+    0% {
+        translate: 700% -700%
+    }
+    to {
+        translate: 0 0
+    }
+}

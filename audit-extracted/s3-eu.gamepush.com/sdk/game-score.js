@@ -1,0 +1,1 @@
+No Content: https://s3-eu.gamepush.com/sdk/game-score.js

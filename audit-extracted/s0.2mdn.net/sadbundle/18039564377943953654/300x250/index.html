@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="ad.size" content="width=300,height=250">
+    <script>
+        var clickTag = "https://www.google.com/";
+    </script>
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.2.4_min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript">
+        (function() {
+            var MAX_URL_PARAM_LENGTH = 34;
+            var CLICK_X_URL_KEY = 'nx';
+            var CLICK_Y_URL_KEY = 'ny';
+            var CREATIVE_DIMENSIONS_KEY = 'dim';
+            var AD_URL_PARAM = '&adurl=';
+
+            var relegateNavigation = '';
+            var urlParamMap = {};
+
+            var isNewtonTokenSet = false;
+            var isTurtleXAdClick = false;
+            var reportingIds = {};
+
+            urlParamMap[CLICK_X_URL_KEY] = null;
+            urlParamMap[CLICK_Y_URL_KEY] = null;
+            urlParamMap[CREATIVE_DIMENSIONS_KEY] = null;
+
+            var handleClickTagMessage = function(e) {
+                try {
+                    var eventData = JSON.parse(e.data);
+                } catch (err) {
+                    return;
+                }
+                if (eventData.isInitClickTag) {
+                    if (eventData.clickTags) {
+                        for (var i = 0; i < eventData.clickTags.length; i++) {
+                            var clkTag = eventData.clickTags[i];
+                            window[clkTag.name] = clkTag.url;
+
+                            if (clkTag.eTldPlusOne) {
+                                eTldPlusOnes[clkTag.url] = clkTag.eTldPlusOne;
+                            }
+                            if (clkTag.reportingId) {
+                                reportingIds[clkTag.url] = clkTag.reportingId;
+                            }
+                        }
+                    } else if (eventData.clickTag) {
+                        window.clickTag = eventData.clickTag;
+                    }
+                    relegateNavigation = eventData.relegateNavigation;
+                }
+                if (isNewtonEnabled(eventData) && !isNewtonTokenSet) {
+                    var newtonOt2Token = eventData.newtonOt2Token;
+                    enableAttributionReportingApi(newtonOt2Token);
+                }
+                if (eventData.isTurtleXAdClick) {
+                    isTurtleXAdClick = true;
+                }
+            };
+
+            var isNewtonEnabled = function(eventData) {
+                return 'newtonOt2Token' in eventData;
+            }
+
+            var enableAttributionReportingApi = function(originTrialToken) {
+                if (/Chrome/.test(window.navigator.userAgent)) {
+                    var meta = document.createElement('meta');
+                    meta.httpEquiv = 'origin-trial';
+                    meta.content = String(originTrialToken);
+                    document.getElementsByTagName('head')[0].appendChild(meta);
+                    isNewtonTokenSet = true;
+                }
+            };
+
+            var storeClickCoordinates = function(e) {
+                urlParamMap[CLICK_X_URL_KEY] = Math.round(e.clientX);
+                urlParamMap[CLICK_Y_URL_KEY] = Math.round(e.clientY);
+            };
+
+            var getCreativeDimensions = function() {
+                return window.innerWidth + 'x' + window.innerHeight;
+            }
+
+            var getExitClickParams = function(e) {
+                urlParamMap[CREATIVE_DIMENSIONS_KEY] = getCreativeDimensions();
+
+                var exitParams = '';
+                for (var key in urlParamMap) {
+                    exitParams += '&' + key + '=';
+                    if (urlParamMap[key] !== null) {
+                        exitParams += urlParamMap[key];
+                    }
+                }
+                return exitParams;
+            }
+
+            var appendExitClickParams = function(url) {
+                var adUrlIndex = url.toLowerCase().indexOf(AD_URL_PARAM);
+                var paramsToBeAdded = getExitClickParams();
+                if (adUrlIndex > -1 && paramsToBeAdded.length <= MAX_URL_PARAM_LENGTH) {
+                    url = url.substr(0, adUrlIndex) + paramsToBeAdded +
+                        url.substr(adUrlIndex);
+                };
+                return url;
+            };
+
+            if (open.call) {
+                window.open = function(open) {
+                    return function(url, name, features) {
+                        if (isTurtleXAdClick && !!reportingIds[url]) {
+                            var message = {
+                                'reportingId': reportingIds[url],
+                                'clickX': urlParamMap[CLICK_X_URL_KEY],
+                                'clickY': urlParamMap[CLICK_Y_URL_KEY],
+                                'creativeDims': getCreativeDimensions()
+                            };
+                            parent.postMessage(JSON.stringify(message), '*');
+                        }
+                        url = appendExitClickParams(url);
+                        if (relegateNavigation === 'parent') {
+                            var message = {
+                                'clickTag': url,
+                                'isPostClickTag': true
+                            };
+                            parent.postMessage(JSON.stringify(message), '*');
+                        } else {
+                            var args = [url, name];
+                            var windowFeatures = '';
+
+                            if (features) {
+                                windowFeatures = windowFeatures.concat(features);
+                            }
+                            if (isNewtonTokenSet &&
+                                !!document.featurePolicy ? .allowedFeatures().includes(
+                                    'attribution-reporting')) {
+                                if (features) {
+                                    if (!features.includes('attributionsrc')) {
+                                        windowFeatures = windowFeatures.concat(features, ', attributionsrc');
+                                    }
+                                } else {
+                                    windowFeatures = windowFeatures.concat('attributionsrc');
+                                }
+                            }
+
+                            if (windowFeatures) {
+                                args.push(windowFeatures);
+                            }
+                            open.apply(window, args);
+                        }
+                    };
+                }(window.open);
+            }
+
+            if (window.addEventListener) {
+                window.addEventListener(
+                    'message', handleClickTagMessage, false);
+                window.addEventListener('mousedown', storeClickCoordinates, true);
+            } else {
+                window.attachEvent('onmessage', handleClickTagMessage);
+            }
+        })();
+    </script>
+</head>
+
+<body>
+
+    <div class="ad-container" id="adContainer">
+
+        <!-- GENERATED by _build/post-open.js from Brian's flat 2x art; don't hand-edit.
+                 The background scales slowly for the whole ad while ten quote cards fade in
+                 and out in turn (each critic card = the shared headline + that name), then
+                 the endframe. Timing is in scripts.js, shared by every size. Images marked
+                 data-src are loaded by scripts.js in playback order. -->
+        <img class="state bg" src="images/bg.jpg" style="left:0px;top:0px;width:300px;height:250px">
+        <img class="state card" src="images/card01.png" style="left:0px;top:85.5px;width:300px;height:99.5px">
+        <img class="state card" data-src="images/card02.png" style="left:0px;top:85.5px;width:300px;height:99.5px">
+        <img class="state card" data-src="images/card03.png" style="left:0px;top:85.5px;width:300px;height:99.5px">
+        <img class="state card" data-src="images/card04.png" style="left:0px;top:85.5px;width:300px;height:99.5px">
+        <img class="state card" data-src="images/card05.png" style="left:0px;top:85.5px;width:300px;height:99.5px">
+        <img class="state card" data-src="images/card06.png" style="left:0px;top:85.5px;width:300px;height:99.5px">
+        <img class="state card" data-src="images/card07.png" style="left:0px;top:85.5px;width:300px;height:99.5px">
+        <img class="state card" data-src="images/card08.png" style="left:0px;top:85.5px;width:300px;height:99.5px">
+        <img class="state card" data-src="images/card09.png" style="left:0px;top:89px;width:300px;height:79px">
+        <img class="state card" data-src="images/card10.png" style="left:13.5px;top:80px;width:273px;height:109px">
+        <img class="state endframe" data-src="images/endframe.png" style="left:0px;top:5px;width:300px;height:239px">
+        <div class="cta-wrap">
+            <img class="state cta cta-normal" data-src="images/cta.png" style="left:236.5px;top:209px;width:57px;height:24px">
+            <img class="state cta cta-over" data-src="images/cta-over.png" style="left:236.5px;top:209px;width:57px;height:24px">
+        </div>
+        <img class="state credit" src="images/credit.png" style="left:289.5px;top:145.5px;width:3.5px;height:61px">
+
+        <div class="border"></div>
+
+    </div>
+
+    <script>
+        var FRAMES = {
+            "width": 300,
+            "height": 250,
+            "duration": 30,
+            "bgStart": 1,
+            "bgScale": 1.15,
+            "holdHeadline": false,
+            "cta": {
+                "src": "images/cta.png",
+                "over": "images/cta-over.png"
+            }
+        };
+    </script>
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>

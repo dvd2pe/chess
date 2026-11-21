@@ -1,0 +1,1 @@
+(module (func $fib (;0;) (export "fib") (param $var0 i32) (result i32) local.get $var0 i32.const 2 i32.lt_s if i32.const 1 return end local.get $var0 i32.const 2 i32.sub call $fib local.get $var0 i32.const 1 i32.sub call $fib i32.add return ) )
